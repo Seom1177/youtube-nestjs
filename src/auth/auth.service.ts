@@ -44,16 +44,4 @@ export class AuthService {
 
     return data;
   }
-
-  async validateUser(username: string, pass: string): Promise<any> {
-    const user = await this.userModel.findOne({ email: username });
-
-    const checkedPassword = await compare(pass, user.password);
-
-    if (user && checkedPassword) {
-      const { password, ...result } = user;
-      return result;
-    }
-    return null;
-  }
 }

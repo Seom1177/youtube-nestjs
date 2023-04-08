@@ -9,6 +9,7 @@ import {
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterAuthDto } from './dto/register-auth.dto';
+import { LoginAuthDto } from './dto/login-auth.dto';
 
 @Controller('auth')
 export class AuthController {
@@ -22,4 +23,8 @@ export class AuthController {
   }
 
   //Todo login
+  @Post('login')
+  loginUser(@Body() userObjectlogin:LoginAuthDto){
+    return this.authService.login(userObjectlogin);
+  }
 }

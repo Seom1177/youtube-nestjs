@@ -2,6 +2,11 @@
 <p>Agregar Swagger: https://docs.nestjs.com/openapi/introduction</p>
 <p>Add new EndPoint: nest g resource items</p>
 
+# Connect with mongo
+https://docs.nestjs.com/techniques/mongodb
+## pipes
+https://docs.nestjs.com/pipes
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
